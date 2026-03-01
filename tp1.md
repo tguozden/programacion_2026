@@ -1,58 +1,122 @@
-1.12. Exercises
+# Práctica 1: Introducción a Python
 
-    Write an English sentence with understandable semantics but incorrect syntax. Write another English sentence which has correct syntax but has semantic errors.
+### Ejercicio 1: Sintaxis vs. Semántica
+- Escribe una oración que tenga semántica comprensible pero sintaxis incorrecta.
+- Escribe otra oración en español que tenga sintaxis correcta pero errores semánticos.
 
-    Using the Python interpreter, type 1 + 2 and then hit return. Python evaluates this expression, displays the result, and then shows another prompt. * is the multiplication operator, and ** is the exponentiation operator. Experiment by entering different expressions and recording what is displayed by the Python interpreter.
+### Ejercicio 2: Experimentando con el intérprete de Python
+Usando el intérprete de Python, escribe `1 + 2` y presiona enter. Python evalúa esta expresión, muestra el resultado y luego muestra otro prompt. 
 
-    Type 1 2 and then hit return. Python tries to evaluate the expression, but it can’t because the expression is not syntactically legal. Instead, it shows the error message:
+El operador `*` es para multiplicación y `**` es para potencias. Experimenta ingresando diferentes expresiones y registra lo que muestra el intérprete.
 
-          File "<interactive input>", line 1
-            1 2
-              ^
-        SyntaxError: invalid syntax
+### Ejercicio 3: Errores de sintaxis
+Escribe `1 2` y presiona enter. Python intenta evaluar la expresión pero no puede porque no es sintácticamente válida. En su lugar, muestra un mensaje de error similar a este:
+```python
+File "<interactive input>", line 1
+    1 2
+      ^
+SyntaxError: invalid syntax
+```
 
-    In many cases, Python indicates where the syntax error occurred, but it is not always right, and it doesn’t give you much information about what is wrong.
+En muchos casos, Python indica dónde ocurrió el error de sintaxis, aunque no siempre es preciso y no da mucha información sobre qué está mal. La responsabilidad recae principalmente en que el usuario aprenda las reglas de sintaxis.
 
-    So, for the most part, the burden is on you to learn the syntax rules.
+En este caso, Python se queja porque no hay operador entre los números.
 
-    In this case, Python is complaining because there is no operator between the numbers.
+### Ejercicio 4: Encuentra más errores
 
-    See if you can find a few more examples of things that will produce error messages when you enter them at the Python prompt. Write down what you enter at the prompt and the last line of the error message that Python reports back to you.
+Busca algunos ejemplos adicionales que produzcan mensajes de error cuando los ingreses en el prompt de Python. Anota lo que ingresaste y la última línea del mensaje de error que Python devuelve.
 
-    Type print("hello"). Python executes this, which has the effect of printing the letters h-e-l-l-o. Notice that the quotation marks that you used to enclose the string are not part of the output. Now type "hello" and describe your result. Make notes of when you see the quotation marks and when you don’t.
+### Ejercicio 5: Explorando strings
+Escribe `print("hola")`. Python ejecuta esto, lo que tiene el efecto de imprimir las letras h-o-l-a. Observa que las comillas que usaste para encerrar el string no son parte de la salida.
 
-    Type cheese without the quotation marks. The output will look something like this:
+Ahora escribe `"hola"` y describe el resultado. Toma nota de cuándo ves las comillas y cuándo no.
 
-    Traceback (most recent call last):
-      File "<interactive input>", line 1, in ?
-    NameError: name 'cheese' is not defined
+### Ejercicio 6: Error de nombre
+Escribe `queso` sin las comillas. La salida será similar a esto:
+```python
+Traceback (most recent call last):
+  File "<interactive input>", line 1, in ?
+NameError: name 'queso' is not defined
+```
 
-    This is a run-time error; specifically, it is a NameError, and even more specifically, it is an error because the name cheese is not defined. If you don’t know what that means yet, you will soon.
+Este es un error de tiempo de ejecución (*runtime error*): específicamente es un `NameError`. Ws un error porque el nombre `queso` no está definido.
 
-    Type 6 + 4 * 9 at the Python prompt and hit enter. Record what happens.
+### Ejercicio 7: Expresiones aritméticas
+Escribe `6 + 4 * 9` en el prompt de Python y presiona enter. Registra lo que sucede.
 
-    Now create a Python script with the following contents:
+### Ejercicio 8: Scripts vs. intérprete
+Crea un script de Python con el siguiente contenido:
+```python
+6 + 4 * 9
+```
 
-        1
+¿Qué sucede cuando ejecutás este script?
 
-        	
+Ahora cambia el contenido del script a:
+```python
+print(6 + 4 * 9)
+```
 
-         6 + 4 * 9
+Y ejecútalo nuevamente. ¿Qué sucedió esta vez?
 
-    What happens when you run this script? Now change the script contents to:
+Cuando se escribe una expresión en el prompt de Python, se evalúa y el resultado se muestra automáticamente en la línea siguiente, como si fuera una calculadora.
 
-        1
+Una secuencia de comandos, o *script*, es diferente: las evaluaciones de expresiones no se muestran automáticamente, por lo que es necesario usar la función `print` para que aparezca la respuesta.
 
-        	
 
-        print(6 + 4 * 9)
 
-    and run it again.
+### Ejercicio 9: Manipulación de variables con strings
+Toma la oración: "Todo trabajo y nada de juego hacen de Jack un chico aburrido". Almacena cada palabra en una variable separada y luego imprime la oración en una sola línea usando `print`.
 
-    What happened this time?
+### Ejercicio 10: Precedencia de operadores
+Agrega paréntesis a la expresión `6 * 1 - 2` para cambiar su valor de 4 a -6.
 
-    Whenever an expression is typed at the Python prompt, it is evaluated and the result is automatically shown on the line below. (Like on your calculator, if you type this expression you’ll get the result 42.)
+### Ejercicio 11: Comentarios en el código
+Coloca un comentario antes de una línea de código que funcionaba previamente y registra lo que sucede cuando vuelves a ejecutar el programa.
 
-    A script is different, however. Evaluations of expressions are not automatically displayed, so it is necessary to use the print function to make the answer show up.
+### Ejercicio 12: Asignación de variables
+Inicia el intérprete de Python e ingresa `bruce + 4` en el prompt. Esto te dará un error:
+```
+NameError: name 'bruce' is not defined
+```
 
-    It is hardly ever necessary to use the print function in immediate mode at the command prompt.
+Asigna un valor a `bruce` para que `bruce + 4` evalúe a 10.
+
+### Ejercicio 5: Cálculo de interés compuesto
+La fórmula para calcular el monto final con interés compuesto es:
+
+```
+A = P(1 + r/n)^(nt)
+```
+
+Donde:
+- A = monto final
+- P = principal (monto inicial)
+- r = tasa de interés anual (en decimal)
+- n = número de veces que se capitaliza por año
+- t = número de años
+
+Escribe un programa en Python que asigne el monto principal de $10000 a la variable P, asigne a n el valor 12, y asigne a r la tasa de interés del 8% (0.08). Luego, haz que el programa pregunte al usuario el número de años t que el dinero estará invertido. Calcula e imprime el monto final después de t años.
+
+### Ejercicio 6: Operador módulo
+Evalúa las siguientes expresiones numéricas mentalmente y luego usa el intérprete de Python para verificar tus resultados:
+```python
+>>> 5 % 2
+>>> 9 % 5
+>>> 15 % 12
+>>> 12 % 15
+>>> 6 % 6
+>>> 0 % 7
+>>> 7 % 0
+```
+
+¿Qué sucedió con el último ejemplo? ¿Por qué? Si pudiste anticipar correctamente la respuesta de la computadora en todos excepto el último, es momento de continuar. Si no, tómate tiempo ahora para crear tus propios ejemplos. Explora el operador módulo hasta que estés seguro de que entiendes cómo funciona.
+
+### Ejercicio 7: Problema de horas
+Mirás el reloj y son exactamente las 2pm. Programas una alarma para que suene en 51 horas. ¿A qué hora sonará la alarma? 
+
+### Ejercicio 8: Problema generalizado de horas
+Escribe un programa en Python para resolver la versión general del problema anterior:
+   - Pregunta al usuario a hora actual (en horas, formato 0-23), y pregunta el número de horas a esperar para la alarma. El programa debe mostrar a qué hora suena la alarma.
+
+
