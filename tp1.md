@@ -63,6 +63,7 @@ Cuando se escribe una expresión en el prompt de Python, se evalúa y el resulta
 
 Una secuencia de comandos, o *script*, es diferente: las evaluaciones de expresiones no se muestran automáticamente, por lo que es necesario usar la función `print` para que aparezca la respuesta.
 
+Para pensar: ¿qué ocurre en los en los bloques del intérprete interactivo jupyter? ¿Se muestra la salida de cada instrucción?
 
 
 ### Ejercicio 9: Manipulación de variables con strings
@@ -82,23 +83,7 @@ NameError: name 'bruce' is not defined
 
 Asigna un valor a `bruce` para que `bruce + 4` evalúe a 10.
 
-### Ejercicio 5: Cálculo de interés compuesto
-La fórmula para calcular el monto final con interés compuesto es:
-
-```
-A = P(1 + r/n)^(nt)
-```
-
-Donde:
-- A = monto final
-- P = principal (monto inicial)
-- r = tasa de interés anual (en decimal)
-- n = número de veces que se capitaliza por año
-- t = número de años
-
-Escribe un programa en Python que asigne el monto principal de $10000 a la variable P, asigne a n el valor 12, y asigne a r la tasa de interés del 8% (0.08). Luego, haz que el programa pregunte al usuario el número de años t que el dinero estará invertido. Calcula e imprime el monto final después de t años.
-
-### Ejercicio 6: Operador módulo
+### Ejercicio 5: Operador módulo
 Evalúa las siguientes expresiones numéricas mentalmente y luego usa el intérprete de Python para verificar tus resultados:
 ```python
 >>> 5 % 2
@@ -112,11 +97,11 @@ Evalúa las siguientes expresiones numéricas mentalmente y luego usa el intérp
 
 ¿Qué sucedió con el último ejemplo? ¿Por qué? Si pudiste anticipar correctamente la respuesta de la computadora en todos excepto el último, es momento de continuar. Si no, tómate tiempo ahora para crear tus propios ejemplos. Explora el operador módulo hasta que estés seguro de que entiendes cómo funciona.
 
-### Ejercicio 7: Problema de horas
+### Ejercicio 6: Problema de horas
 Mirás el reloj y son exactamente las 2pm. Programas una alarma para que suene en 51 horas. ¿A qué hora sonará la alarma? 
 
-### Ejercicio 8: Problema generalizado de horas
+### Ejercicio 7: Problema generalizado de horas
 Escribe un programa en Python para resolver la versión general del problema anterior:
-   - Pregunta al usuario a hora actual (en horas, formato 0-23), y pregunta el número de horas a esperar para la alarma. El programa debe mostrar a qué hora suena la alarma.
+   - Pregunta al usuario a hora actual (en horas, formato 0-23), y pregunta el número de horas a esperar para la alarma. El programa debe mostrar a qué hora sonará la alarma.
 
 
