@@ -5,9 +5,11 @@
 1. Escriba un programa que imprima "Hola mundo!" mil veces
 2. Escriba un programa que imprima
    
+   ```
    Un día de la semana es lunes
    Un día de la semana es martes
    ...
+   ```
    
     y así para los 7 días de la semana.
 
