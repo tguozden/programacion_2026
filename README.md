@@ -1,8 +1,13 @@
 # Programacion 2026
 
-## Repositorio en construcción
 
-Aquí estarán las prácticas, apuntes, exámenes y demás recursos de la materia.
+Aquí dejaremos las prácticas, apuntes, exámenes y demás recursos de la materia.
+
+Les comparto también el repositorio de la comisión 3, a cargo de Lautaro
+- https://github.com/Ymil/unrn-programacion-1
+
+La materia que dimos el año pasado:
+- https://github.com/tguozden/programacion_2025
 
 
 
@@ -18,7 +23,6 @@ intérpretes online:
 - w3school en castellano https://w3schoolsua.github.io/python/python_intro_es.html
 - (curso) http://openbookproject.net/thinkcs/python/english3e/
 
-Repositorio 2025: https://github.com/tguozden/programacion_2025
 
 
     
