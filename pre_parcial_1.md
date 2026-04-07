@@ -42,3 +42,38 @@ Escribí un programa que pida números al usuario (como en el ejercicio 1) y los
 - El promedio
 
 **Atención!** No vale usar las funciones `max()` ni `min()`.
+
+## 4
+
+
+Interpretar el siguiente código:  ¿qué se imprimirá en pantalla?
+
+```python
+lista = [10, 3, 7, 1, 8, 4, 6]
+
+resultado = []
+i = 0
+while i < len(lista):
+    if lista[i] % 2 == 0:
+        resultado.append(lista[i])
+    i += 1
+
+print(resultado[::-1])
+```
+## 5
+
+Interpretar el siguiente código:  ¿qué se imprimirá en pantalla?
+
+
+```python
+frase = "El caballo blanco de San Martín"
+
+x = frase.split(" ")
+y = []
+for i in x:
+    if len(i) > 3:
+        y = y + [i]
+        
+print("-".join(y))
+```
+
