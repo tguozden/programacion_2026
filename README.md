@@ -1,5 +1,6 @@
 # Programacion 2026
 
+Notas: https://docs.google.com/spreadsheets/d/15s3H3a4AtoHFBe_jksZ4OvlbK6dOlEe13OODpGgMWzY/
 
 Aquí dejaremos las prácticas, apuntes, exámenes y demás recursos de la materia.
 
