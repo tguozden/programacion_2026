@@ -89,4 +89,8 @@ Escribí un programa que tome las palabras de un texto y las guarde en una lista
 
 
 ```python
-texto = '''Un texto es un conjunto coherente de signos y enunciados, orales o escritos, que transmiten un mensaje con una intención comunicativa. Todo texto efectivo posee un sentido completo dentro de su contexto y se organiza respetando tres propiedades básicas: coherencia (unidad temática), cohesión (conexión entre sus partes) y adecuación (adaptación al destinatario).'''
+texto = '''Un texto es un conjunto coherente de signos y enunciados, orales 
+o escritos, que transmiten un mensaje con una intención comunicativa. 
+Todo texto efectivo posee un sentido completo dentro de su contexto y 
+se organiza respetando tres propiedades básicas: coherencia (unidad temática), 
+cohesión (conexión entre sus partes) y adecuación (adaptación al destinatario).'''
