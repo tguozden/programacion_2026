@@ -3,7 +3,7 @@
 ## 0. Intro de `branch` y `checkout`
 
 - `git branch` — muestra las ramas que existen, o crea una nueva (sin moverte a ella)
-- `git checkout` — coloca el repositorio en una rama que preexistente.
+- `git checkout` — coloca el repositorio en una rama preexistente.
 
 ```bash
 git branch                # ver en que rama estoy

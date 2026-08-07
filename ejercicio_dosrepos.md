@@ -4,7 +4,7 @@ Simulamos dos personas trabajando sobre el mismo repo, usando un repo local como
 
 ## 1. Crear el remoto (bare) a partir de un repo normal
 
-*La palabra *bare* en este contexto se traduce como descubierto o expuesto*
+La palabra *bare* en este contexto se traduce como descubierto o expuesto
 ```bash
 mkdir ejercicio_dosrepos
 cd ejercicio_dosrepos
@@ -28,7 +28,7 @@ Un repo "bare" no tiene directorio de trabajo (*working directory*), solo el his
 
 Nota *remoto.git* es un directorio!
 
-## 2. Alumno1 clona el repositorio*remoto.git*
+## 2. Alumno1 clona el repositorio *remoto.git*
 
 ```bash
 git clone remoto.git alumno1
@@ -80,7 +80,7 @@ git status
 git commit -am "alumno1 cambia el saludo"
 git push origin main
 ```
-¿Porqué -a en el commmit?
+¿Porqué -a en el commit?
 
 Esto va a fallar con `[rejected] (fetch first)`.
 
@@ -91,7 +91,7 @@ git pull --no-rebase origin main
 git status
 cat saludo.txt
 ```
-¿porqué --no-rebase? ¿a dónde apunta *origin?
+¿porqué --no-rebase? ¿a dónde apunta *origin*?
 
 Va a aparecer el conflicto, con los marcadores `<<<<<<<` `=======` `>>>>>>>`.
 
