@@ -26,5 +26,20 @@ git remote set-url origin https://github.com/jaimito/misterio_resuelto.git
 y hagan *push*
 
 
-suban su repositorio `https://github.com/franquito/misterio_resuelto.git` a la siguiente planilla:
+## Otra manera
+
+Observen que origin es un sobrenombre de la nube. Es más podrían agregar otra nube
+
+```
+git remote add minube https://github.com/jaimito/misterio_resuelto.git
+```
+
+y después 
+```
+git push minube main
+```
+Fíjense las direcciones que tienen con `git remote -v`
+
+# Por último
+Suban su repositorio `https://github.com/franquito/misterio_resuelto.git` a la siguiente planilla:
 <https://docs.google.com/spreadsheets/d/1h59NYiwisy13HDq_L8n8x-CoOYWQeIEqozI9pDa4f18/edit?usp=sharing>
