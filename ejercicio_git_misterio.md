@@ -7,7 +7,7 @@ En
 
 Chusmeen la estructura de ramas con 
 ```
-git branch
+git branch --all
 ```
 y
 
