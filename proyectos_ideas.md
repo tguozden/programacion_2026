@@ -1,6 +1,7 @@
 # Ideas para el proyecto final
-Combinando las propuestas originales de la cátedra ([proyectos.md](https://github.com/tguozden/programacion_2025/blob/main/Practicas/proyectos.md)) con ideas adicionales.
+Combinando las propuestas originales del año pasado con ideas adicionales.
 
+- Trabajos prácticos de alumnos [2025](https://docs.google.com/spreadsheets/d/1VzIhwE6VUbcHTl0s_nfjujsOTn0zeSzgUE35kC9HRC0/)
 ---
 
 ## Análisis y visualización de datos
