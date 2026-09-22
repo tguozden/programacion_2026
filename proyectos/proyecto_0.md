@@ -116,6 +116,11 @@ def top_n_ciudades(observaciones: dict, campo: str, n: int, descendente: bool = 
     (o al revés si descendente=False), en una lista. Reutilizable tanto para temperatura
     como para viento."""
 
+def horarios_reportados(observaciones: dict) -> list:
+    """devuelve una lista de los horarios a los que las estaciones 
+    reportaron en la observación dada. 
+    La lista tendráhoras en el formato string "HH:MM",
+    será sin repetir y ordenadas de menor a mayor"""
 
 def mostrar_resumen(observaciones: dict) -> None:
     """Imprime por pantalla el resumen con todas las características calculadas. Usar n=5"""
