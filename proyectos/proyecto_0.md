@@ -30,15 +30,14 @@ Benito Juárez;09-septiembre-2026;21:00;Despejado;10 km;12.6;No se calcula; 72;N
 Los campos, en orden, son:
 
 1. Ciudad / estación
-2. Fecha (`dd-mes-aaaa`)
-3. Hora
-4. Condición del cielo
-5. Visibilidad
-6. Temperatura (°C)
-7. Sensación térmica (°C) — puede venir como el texto `No se calcula` en vez de un número
-8. Humedad (%)
-9. Viento: dirección y velocidad juntos (por ejemplo `Sur  5`, o `Calma` cuando no hay viento)
-10. Presión (hPa)
+2. Fecha y hora en formato `datetime.datetime` 
+3. Condición del cielo
+4. Visibilidad
+5. Temperatura (°C)
+6. Sensación térmica (°C) — puede venir como el texto `No se calcula` en vez de un número
+7. Humedad (%)
+8. Viento: dirección y velocidad juntos (por ejemplo `Sur  5`, o `Calma` cuando no hay viento)
+9. Presión (hPa)
 
 Puntos a tener en cuenta sobre estos datos reales:
 
@@ -94,6 +93,10 @@ def leer_observaciones(ruta: str) -> dict:
     """Lee el archivo de observaciones del SMN y devuelve un diccionario
     {ciudad: datos}, con los nombres de ciudad limpios y el campo de viento
     ya separado en dirección y velocidad."""
+    
+
+def parsear_fecha_hora(fecha: str, hora: str) -> datetime:
+    """Convierte 'dd-mes-aaaa' y 'hh:mm' del SMN en un datetime."""
 
 def separar_viento(campo_viento: str) -> tuple:
     """Convierte un campo de viento como 'Norte  3' en (direccion, velocidad).
@@ -138,6 +141,7 @@ Por ahora, sin separar en subcarpetas de código ni tests:
 nombre-proyecto/
 ├── README.md
 ├── analisis_smn.py
+├── funciones_smn.py
 ├── (otros .py si dividen el programa en módulos)
 ├── datos/
 │   └── observaciones_smn.txt
