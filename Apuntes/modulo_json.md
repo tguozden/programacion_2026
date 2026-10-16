@@ -69,7 +69,7 @@ y otras no:
 
 ```json
 {
-  "nombre": 'Lisa',
+  'nombre': 'Lisa',
   4: true,
 }
 ```
