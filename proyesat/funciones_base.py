@@ -74,3 +74,14 @@ def obtener_trayectoria(satelite: EarthSatellite, inicio: datetime, horas: int, 
     subpoint = wgs84.subpoint(satelite.at(_tiempos[clave]))
 
     return (subpoint.latitude.degrees, subpoint.longitude.degrees, subpoint.elevation.km)
+
+
+def epoch_medio(registros: list) -> datetime:
+    """
+    Recibe la lista de registros leída de datos/satelites.json y devuelve
+    la fecha media de sus "EPOCH" como datetime en UTC.
+    Sirve para elegir un instante de cálculo cercano a los datos.
+    """
+    segundos = [datetime.fromisoformat(r["EPOCH"]).replace(tzinfo=timezone.utc).timestamp()
+                for r in registros]
+    return datetime.fromtimestamp(sum(segundos) / len(segundos), tz=timezone.utc)

@@ -69,8 +69,6 @@ python -m nbclassic    # Jupyter clásico
 
 Si tienen instalado Jupyter Notebook versión 6 o anterior, `python -m notebook` ya abre la interfaz clásica.
 
-Para correr las pruebas, desde la misma terminal: `python tests.py`.
-
 ## Abrir el notebook desde VS Code
 
 1. Abrir la carpeta del proyecto con File > Open Folder.
