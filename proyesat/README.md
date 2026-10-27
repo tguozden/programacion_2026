@@ -52,7 +52,7 @@ Los satélites a lo largo del tiempo (cómo creció su cantidad con los años, l
 
 ## Datos
 
-Los datos provienen del repositorio público CelesTrak (<https://celestrak.org/NORAD/elements/>), que publica las órbitas de todos los satélites activos. Para que todos los grupos obtengan los mismos resultados, se usa el archivo provisto `datos/satelites.json`, con 16.710 satélites.
+Los datos provienen del repositorio público CelesTrak (<https://celestrak.org/NORAD/elements/>), que publica las órbitas de todos los satélites activos. Para que todos los grupos obtengan los mismos resultados, se usa el archivo provisto `datos/satelites.json`, con 16.822 satélites.
 
 El archivo es una lista de diccionarios, uno por satélite. Por ejemplo, el de la Estación Espacial Internacional:
 
@@ -60,10 +60,10 @@ El archivo es una lista de diccionarios, uno por satélite. Por ejemplo, el de l
 {
     "OBJECT_NAME": "ISS (ZARYA)",
     "OBJECT_ID": "1998-067A",
-    "EPOCH": "2026-10-14T08:06:39.057984",
-    "MEAN_MOTION": 15.48861773,
-    "ECCENTRICITY": 0.00067245,
-    "INCLINATION": 51.6325,
+    "EPOCH": "2026-10-27T04:14:31.558560",
+    "MEAN_MOTION": 15.49073103,
+    "ECCENTRICITY": 0.00069486,
+    "INCLINATION": 51.6336,
     ...
     "NORAD_CAT_ID": 25544,
     ...
@@ -127,7 +127,7 @@ BARILOCHE = (-76.30, -46.13, -66.30, -36.13)   # lon_min, lat_min, lon_max, lat_
 
 Funciones que trabajan sobre la lista de diccionarios del JSON (los llamamos registros):
 
-- `leer_satelites(ruta)`: lee el archivo JSON (con codificación `utf-8`) y devuelve la lista de registros. Si el archivo no existe, imprime un aviso y devuelve una lista vacía.
+- `leer_satelites(ruta)`: lee el archivo JSON (con codificación `utf-8`) y devuelve los registros en una lista de diccionarios. Si el archivo no existe, imprime un aviso y devuelve una lista vacía.
 - `anio_lanzamiento(registro)`: devuelve el año de lanzamiento como `int`, a partir de los primeros cuatro caracteres de `"OBJECT_ID"`.
 - `grupo(nombre)`: devuelve el grupo al que pertenece un satélite según cómo empieza su nombre, de acuerdo con la tabla de abajo. Si no coincide con ningún prefijo, devuelve `"Otros"`. Conviene guardar la tabla como un diccionario `GRUPOS = {"STARLINK": "Starlink", ...}` al principio del módulo.
 - `contar_por_grupo(registros)`: devuelve un diccionario `{grupo: cantidad}`, con la cantidad de satélites de cada grupo.
