@@ -1,36 +1,29 @@
 # Trabajo Práctico — Etapa 2
 ## Gráficos y estadísticas
 
-En esta etapa se agregan gráficos al módulo `graficos.py` y nuevas secciones al notebook `informe.ipynb`.
+En esta etapa se agregan gráficos y nuevas secciones al notebook `informe.ipynb`.
 
-Las funciones de gráficos:
-
-- reciben los datos y un nombre de archivo;
-- guardan la figura en `salidas/` y también la muestran en el notebook;
-- llevan título y etiquetas en los ejes (salvo la torta, que lleva título y etiquetas en las porciones).
-
----
 
 
 ## Requerimientos
 
 ### 1. Lanzamientos en el tiempo
 
-- `barras_lanzamientos(lanzamientos, archivo)`: gráfico de barras con lo que devuelve `lanzamientos_por_anio` (eje X año, eje Y cantidad de satélites lanzados).
-- `barras_apiladas(lanzamientos_a, lanzamientos_b, etiqueta_a, etiqueta_b, archivo)`: recibe dos diccionarios `{año: cantidad}` y dibuja barras apiladas, con leyenda. Los años que falten en uno de los diccionarios cuentan como 0. Sirve, por ejemplo, para comparar Starlink con el resto.
+- gráfico de barras con lo que devuelve `lanzamientos_por_anio` (eje X año, eje Y cantidad de satélites lanzados).
+- recibe dos diccionarios `{año: cantidad}` y dibuja barras apiladas, con leyenda. Los años que falten en uno de los diccionarios cuentan como 0. Sirve, por ejemplo, para comparar Starlink con el resto.
 
 ### 2. Grupos
 
-- `barras_altura_media(resumen, archivo)`: gráfico de barras con la altitud media de cada grupo, a partir de lo que devuelve `resumen_por_grupo`.
+   gráfico de barras con la altitud media de cada grupo, a partir de lo que devuelve `resumen_por_grupo`.
 
 ### 3. Altitudes
 
-- `histograma_altitudes_leo(satelites, archivo, ancho_bin=10)`: histograma de las altitudes entre 200 y 2.000 km, con bins de `ancho_bin` km. Pista: `bins=np.arange(200, 2000 + ancho_bin, ancho_bin)`. 
-- `histograma_altitudes_log(satelites, archivo, n_bins=60)`: histograma de todas las altitudes con el eje X en escala logarítmica y bins de ancho logarítmico. Pista: `np.logspace` y `plt.xscale("log")`.
+-  histograma de las altitudes entre 200 y 2.000 km, con bins de `ancho_bin` km. Pista: `bins=np.arange(200, 2000 + ancho_bin, ancho_bin)`. 
+-  histograma de todas las altitudes con el eje X en escala logarítmica y bins de ancho logarítmico. Pista: `np.logspace` y `plt.xscale("log")`.
 
 ### 4. Inclinaciones
 
-- `histograma_inclinaciones(registros, archivo)`: histograma de `"INCLINATION"` de 0° a 180°, con bins de 1°.
+- histograma de `"INCLINATION"` de 0° a 180°, con bins de 1°.
 
 ---
 
@@ -55,7 +48,6 @@ Antes de programarlo, envíen al docente:
 - la pregunta que quieren responder;
 - qué tipo de gráfico van a hacer y con qué datos.
 
-Una vez aprobado, la función va en `graficos.py` (con su docstring) y la sección en el notebook, con la pregunta y la respuesta.
 
 ---
 
