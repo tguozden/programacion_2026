@@ -53,11 +53,11 @@ Antes de programarlo, envíen al docente:
 
 ## Tópico avanzado (opcional): pandas
 
-Rehacer algunos resultados con pandas, en un módulo aparte `analisis_pandas.py`:
+Rehacer algunos resultados con pandas, en una sección nueva del notebook (todo en las celdas):
 
-- `a_dataframe(registros, satelites)`: devuelve un `DataFrame` con una fila por satélite y columnas `nombre`, `anio`, `grupo`, `inclinacion`, `altitud_km`, `tipo_orbita`. Pista: `pd.DataFrame(lista_de_diccionarios)`.
-- `resumen_por_grupo_pd(df)`: el mismo resultado que `resumen_por_grupo`, usando `df.groupby("grupo")["altitud_km"].agg(...)`.
-- `lanzamientos_por_grupo_pd(df)`: tabla con un año por fila y un grupo por columna, usando `groupby(["anio", "grupo"]).size().unstack(fill_value=0)`.
+- definir `a_dataframe(registros, satelites)`, que devuelve un `DataFrame` con una fila por satélite y columnas `nombre`, `anio`, `grupo`, `inclinacion`, `altitud_km`, `tipo_orbita`. Pista: `pd.DataFrame(lista_de_diccionarios)`.
+- obtener el mismo resultado que `resumen_por_grupo`, usando `df.groupby("grupo")["altitud_km"].agg(...)`, y comprobar que coincide.
+- armar una tabla con un año por fila y un grupo por columna, usando `groupby(["anio", "grupo"]).size().unstack(fill_value=0)`.
 - repetir el análisis de altura de satélites por grupo usando boxplots
 
 ---
